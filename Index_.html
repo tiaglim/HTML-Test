@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index_</title>
+    <style text="text/css">
+
+body {min-height: 100vh;
+    margin-left: 4cm;
+    margin-right: 8cm;
+    text-align:justify;
+    }           
+    .menu{
+        list-style:none;
+        border:4px;
+        position:relative;
+        left: 50%;
+                transform: translateX(-50%);
+        }
+        .menu li{
+            position:-ms-page;
+            float:left;
+            border-right:1px solid #c0c0c0;
+            }
+            .menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+        
+        .menu li a:hover{
+        background:#333;
+        color:#fff;
+        -moz-box-shadow:0 3px 10px 0 #CCC;
+        -webkit-box-shadow:0 3px 10px 0 #ccc;
+        text-shadow:0px 0px 5px #fff;
+        }
+        .menu li  ul{
+            position:absolute;
+            top:25px;
+            left:0;
+            background-color:#fff;
+            display:none;
+            }
+            .menu li:hover ul, .menu li.over ul{display:block;}
+            .menu li ul li{
+                border:1px solid #c0c0c0;
+                display:block;
+                width:150px;
+                }
+                p{  
+                    text-decoration: Arial;
+                    color: black;
+                    letter-spacing: 2px; word-spacing: 4px;
+                    font-size: larger;
+                    font-size: 24px;
+                }
+        h1{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: italic;
+            color:red;
+            text-shadow: 2px 4px 5px rgb(12, 12, 12); 
+            letter-spacing: 2px; word-spacing: 4px;
+        }
+        h2{
+            text-align: center;
+            color: red;
+            text-shadow: 2px 4px 5px rgb(12, 12, 12); 
+            letter-spacing: 0px; word-spacing: 0px;
+        }
+li{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    text-shadow: 2px 4px 5px rgb(12, 12, 12); 
+            letter-spacing: 2px; word-spacing: 4px;
+            list-style:none;
+        border:4px;
+}
+
+    </style>
+</head>
+<body>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdn9cHmujMd0eNKti7xS0YPjS65aAKKJ-xSQ&usqp=CAU">
+    <nav>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">HTML</a>
+        <ul>
+            <li><a href="videoaula_.html">Video Aulas</a></li>
+        </ul>
+            <li><a href="contato_.html">Contato </a></li>
+    </nav>
+    </br>
+    <h1>Como criar uma pagina em HTML</h1>
+    
+    <p>
+        Criada pelo britânico Tim Berners-Lee, o acrônimo HTML significa HiperText Markup Language, traduzindo ao português: Linguagem de Marcação de Hipertexto.  O HTML é o componente básico da web, ele permite inserir o conteúdo e estabelecer a estrutura básica de um website. Portanto, ele serve para dar significado e organizar as informações de uma página na web. Sem isso, o navegador não saberia exibir textos como elementos ou carregar imagens e outros conteúdos.
+    
+    Os hipertextos são conjuntos de elementos conectados. Esses podem ser palavras, imagens, vídeos, documento, etc. Quando conectados, formam uma rede de informações que permite a comunicação de dados, organizando conhecimentos e guardando informações.
+    
+    Ao visitar uma página simples na web, você pode perceber que existem diferentes distribuições e tamanhos para títulos, parágrafos, imagens, vídeos e qualquer outro elemento. Essa estrutura é estabelecida através do HTML. No inicio da web, era comum encontrar sites apenas contendo textos e imagens simples, com estrutura básica e sem estilizações. Porém, nos dias atuais, muito dificilmente você encontrará sites que possuam apenas elementos HTML. Portanto, podemos considerar o HTML o “esqueleto” da sua página.
+    
+    Imagine então que além do esqueleto, é necessário ter o corpo. Para isso, temos então as linguagens CSS e o JavaScript, que em conjunto com HTML, formam a base para todos os websites atuais. Veremos mais à frente o que significam essas linguagens
+</p>
+    <h1>O que são tags</h1>
+    
+    <p>Através de qualquer editor de texto, como o Sublime Text, o NotePad++ ou até mesmo o bloco de notas, é possível criar um documento com a extensão .html que será renderizado pelos navegadores.
+    
+        Conforme explicado anteriormente, este documento consiste em uma série de tags. As tags são códigos que definem toda a estrutura da página, tais como o seu tamanho, a fonte da letra, as cores, as quebras de linha e etc. A maioria dos elementos do documento HTML são compostos por uma estrutura de abertura e uma de fachamento, como <tag> e </tag>. Há também tags de estrutura única, como a  tag <br/> que realiza uma quebra de linha.
+        
+        Digamos que você queria escrever um paragrafo, chamamos então a tag < p >, escrevemos o paragrafo e finalmente fechamos a tag com < /p >
+       <p> Dessa forma, ao salvar o arquivo com a extensão .html e abri-lo em um navegador, você verá o parágrafo escrito na tela do navegador.
+    <h1>Estrutura básica de um documento HTML</h1>
+    <p>O documento deve conter uma declaração informando o doctype, que no caso do HTML5, basta declarar com o elemento < !DOCTYPE html >. Após isso iniciamos nosso documento com a tag < html > que deverá ser fechada ao final do documento com < /html >. Posteriormente, nosso documento deverá ter um elemento < head > que receberá todas as informações básicas da sua página, como o título, links de elementos externos, metadados, etc. Declaramos então um título para página através da tag < title >. Finalmente abrimos então a tag < body > que consiste no corpo do nosso documento, onde ficarão todos os elementos que serão renderizados na tela do navegador. Dessa forma, temos a estrutura básica do nosso documento html:
+    Para que não ocorram erros de renderização ou incompatibilidade de caracteres, devemos também declarar o padrão de teclado. No Brasil e em boa parte da América Latina, utilizamos o padrão UTF-8. Dessa forma, através da tag de metadados < meta/ >, vamos declarar dentro de um atributo charset que nosso padrão é o UTF-8. Temos assim a estrutura básica de nosso documento HTML:
+        </p>
+        <h1>O que é um Hyperlink</h1>
+    <p>Os hiperlinks são uma das inovações mais interessantes que a Web oferece. Bem, eles são uma característica da Web desde o início, mas são o que torna a Web como ela é — eles nos permitem vincular nossos documentos a qualquer outro documento (ou outro recurso) que queremos. Também podemos vincular para partes específicas de documentos e podemos disponibilizar aplicativos em um endereço web simples (em contraste com aplicativos nativos, que devem ser instalados e tantas outras coisas). Qualquer conteúdo da web pode ser convertido em um link, para que, quando clicado (ou ativado de outra forma) fará com que o navegador vá para outro endereço</p>
+    </br>
+    <center><p>&copy; Desenvolvido por Tiago Lima</p>
+    </center>
+</body>
+</html>
